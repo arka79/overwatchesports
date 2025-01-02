@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players List</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: antiquewhite;
+        }
+        h1 {
+            color: whitesmoke;
+            background: #000;
+            padding: 20px;
+            text-align: center;
+            margin: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            background-color: #111;
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: antiquewhite;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        /* Responsive Styles */
+        @media (min-width: 600px) {
+            a{
+                flex-direction: column;
+            }
+            li {
+                flex-direction: row;
+                justify-content: flex-start;
+                text-align: left;
+            }
+            img {
+                width: 150px;
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+        }
+
+        @media (min-width: 768px) {
+            img {
+                width: 200px;
+            }
+        }
+        a{
+                flex-direction: column;
+            }
+
+        @media (min-width: 1024px) {
+            img {
+                width: 600px;
+            }
+            a{
+                flex-direction: row;
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Players List</h1>
+    <ul>
+        <li><a href="#"><img src="playerinfo/player1.jpeg" alt="Player 1"> OVW OBITO</a></li>
+        <li><a href="#"><img src="playerinfo/player2.jpeg" alt="Player 2"> OVW MADARA</a></li>
+        <li><a href="#"><img src="playerinfo/player3.jpeg" alt="Player 3"> OVW LUFFY</a></li>
+        <li><a href="#"><img src="playerinfo/player4.jpeg" alt="Player 4"> OVW ITACHI</a></li>
+        <li><a href="#"><img src="playerinfo/player5.jpeg" alt="Player 5"> OVW BITTU</a></li>
+        <li><a href="#"><img src="playerinfo/player6.jpeg" alt="Player 6"> OVW NAGI</a></li>
+    </ul>
+</body>
+</html>
